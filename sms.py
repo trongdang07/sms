@@ -1,7 +1,7 @@
 # [ Import ]
 import os, sys
 import requests, json
-import time
+from time import sleep
 import uuid, threading
 import time, random, string
 from lequangminh import *
@@ -380,5 +380,5 @@ def Main():
         thantaioi(phone)
         atmonline(phone)
         print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> DONE! """))
-        time.sleep(10)
+        sleep(10)
 Main()
