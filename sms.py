@@ -381,4 +381,9 @@ def Main():
         atmonline(phone)
         print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> DONE! """))
         sleep(10)
-Main()
+
+if __name__ == '__main__':
+
+    while True:
+
+        Main()
