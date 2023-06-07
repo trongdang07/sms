@@ -379,5 +379,5 @@ def Main():
         thantaioi(phone)
         atmonline(phone)
         print(Colorate.Diagonal(Colors.red_to_yellow, f"""=> DONE! """))
-        sleep(10)
+        time.sleep(10)
 Main()
