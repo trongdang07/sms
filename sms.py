@@ -57,7 +57,7 @@ text = """
      ██████╔╝      ██║   ╚██████╔╝╚██████╔╝███████╗ 
      ╚═════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ 
 ╔════════════════════════════════════════════════════════╗ 
- => All Thông Tin MXH: haidang-coder.000webhostapp.com
+ => All Thông Tin MXH: haidang-coder.neocities.org
 ══════════════════════════════════════════════════════════
  => KEY TOOL SPAM SMS VJP 
  => Author: Lê Trọng Hải Đăng 
@@ -75,7 +75,7 @@ banner = r"""
      ██████╔╝      ██║   ╚██████╔╝╚██████╔╝███████╗ 
      ╚═════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ 
 ╔════════════════════════════════════════════════════════╗ 
- => All Thông Tin MXH: haidang-coder.000webhostapp.com
+ => All Thông Tin MXH: haidang-coder.neocities.org
 ══════════════════════════════════════════════════════════
 
  => TOOL SPAM SMS VJP 
@@ -117,7 +117,7 @@ def Banner():
      ██████╔╝      ██║   ╚██████╔╝╚██████╔╝███████╗ 
      ╚═════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ 
 ╔════════════════════════════════════════════════════════╗ 
- => All Thông Tin MXH: haidang-coder.000webhostapp.com
+ => All Thông Tin MXH: haidang-coder.neocities.org
 ══════════════════════════════════════════════════════════
  => TOOL SPAM SMS VJP 
  => Author: Lê Trọng Hải Đăng 
