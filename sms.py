@@ -11,7 +11,7 @@ ngay=int(strftime('%d'))
 key1=str(ngay*1237646546+2318472)
 key = 'HaiDang-'+key1
 
-url = 'https://haidang-coder.000webhostapp.com/api/key.html?key='+key
+url = 'https://hdangdvmxh.000webhostapp.com/api/index.html?key='+key
 
 token_link1s = '5b233a2a4d592b536e6340391823aa72ed66aac4'
 link1s = requests.get(f'https://link1s.com/api?api={token_link1s}&url={url}').json()
