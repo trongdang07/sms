@@ -3,7 +3,7 @@ pip install lequangminh
 
 pip install requests
 
-pip install git
+pkg install git
 
 pkg install python
 
